@@ -67,3 +67,23 @@
     text-decoration: none !important;
     
 }
+
+/**** MEDIA QUERIES ****/
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 500px) {
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .logo-text {
+    font-size: 1em;
+    }
+
+    .logo-and-text {
+        padding-top: 25%;
+    }
+
+    .button-shop-now {
+        padding: 5px;
+    }
+}
