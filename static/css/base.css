@@ -1,0 +1,21 @@
+.logo {
+    color: green;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: green;
+}
+
+.logo-text {
+    padding-top: 15%;
+    color: red;
+}
+
+.button-shop-now {
+    background-color: green;
+    padding: 16px 36px;
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+}
