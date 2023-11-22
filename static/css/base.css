@@ -3,9 +3,19 @@
     text-transform: uppercase;
 }
 
-.signup-form {
-    padding-top: 10%;
-    text-align: center;
+.forms {
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 .home {
