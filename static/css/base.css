@@ -3,13 +3,20 @@
     text-transform: uppercase;
 }
 
+body {
+    background: url('/media/fk_home.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+}
+
 .nav-link {
     color: green;
 }
 
 .logo-text {
-    padding-top: 15%;
+    padding-top: 70%;
     color: red;
+    right: 50%;
 }
 
 .button-shop-now {
