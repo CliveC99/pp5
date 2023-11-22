@@ -13,6 +13,10 @@
     color: green;
 }
 
+.card-img-top {
+    padding-top: 15%;
+}
+
 .logo-text {
     padding-top: 70%;
     color: red;
