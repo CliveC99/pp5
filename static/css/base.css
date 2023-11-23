@@ -68,6 +68,10 @@
     
 }
 
+.products-padding {
+    padding-top: 10%;
+}
+
 /**** MEDIA QUERIES ****/
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 500px) {
@@ -85,5 +89,9 @@
 
     .button-shop-now {
         padding: 5px;
+    }
+
+    .products-padding {
+        padding-top: 20%;
     }
 }
