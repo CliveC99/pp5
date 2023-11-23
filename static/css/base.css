@@ -80,6 +80,10 @@
     right: 10px;
 }
 
+.bag-padding {
+    padding-top: 10%;
+}
+
 
 /**** MEDIA QUERIES ****/
 /* pad the top a bit when navbar is collapsed on mobile */
