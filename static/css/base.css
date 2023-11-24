@@ -68,9 +68,15 @@
     
 }
 
-.products-padding {
+.products-padding{
     padding-top: 10%;
 }
+
+.product-detail-padding  {
+    padding-top: 8%;
+}
+
+
 
 .btt-button {
     height: 42px;
@@ -83,7 +89,6 @@
 .bag-padding {
     padding-top: 10%;
 }
-
 
 /**** MEDIA QUERIES ****/
 /* pad the top a bit when navbar is collapsed on mobile */
