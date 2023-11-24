@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block page_header %}
 {% endblock %}
@@ -73,7 +74,7 @@
                                 <a class="update-link btn btn-success d-flex justify-content-center"><small>Update</small></a>
                             </td>
                             <td class="py-3">
-                                <p class="my-0">€{{ item.product.price }}</p>
+                                <p class="my-0">€{{ item.product.price | calculate_total:item.quantity }}</p>
                             </td>
                         </tr>
                         {% endfor %}
@@ -84,8 +85,7 @@
                                 <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
                                 {% if free_delivery_delta > 0 %}
                                 <p class="mb-1 text-danger">
-                                    You could get free delivery by spending just <strong>€{{ free_delivery_delta
-                                        }}</strong> more!
+                                    You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
                                 </p>
                                 {% endif %}
                             </td>
