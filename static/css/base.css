@@ -95,6 +95,12 @@
     z-index: 999999;
 }
 
+.bag-notifaction-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 .custom-toast {
     overflow: visible;
 }
