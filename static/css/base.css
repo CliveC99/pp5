@@ -76,8 +76,6 @@
     padding-top: 8%;
 }
 
-
-
 .btt-button {
     height: 42px;
     width: 42px;
@@ -111,5 +109,8 @@
 
     .products-padding {
         padding-top: 20%;
+    }
+    .test {
+        color: red;
     }
 }
