@@ -76,6 +76,14 @@ def add_product(request):
     """
     Site admins can add a product to the site
     """
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Product added!')
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(request, 'Error adding product, check the form and try again.')
     form = ProductForm()
     template = 'products/add_product.html'
     context = {
