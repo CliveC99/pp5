@@ -88,6 +88,21 @@
     padding-top: 10%;
 }
 
+.message-container { 
+    position: fixed;
+    top: 10%;
+    right: 1%;
+    z-index: 999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 5px;
+}
+
 /**** MEDIA QUERIES ****/
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 500px) {
