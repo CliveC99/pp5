@@ -68,7 +68,11 @@
     
 }
 
-.products-padding, .checkout-padding, .checkout-success-padding, .add-product-padding{
+.products-padding, 
+.checkout-padding, 
+.checkout-success-padding, 
+.add-product-padding,
+.add-product-padding{
     padding-top: 10%;
 }
 
