@@ -53,8 +53,7 @@
                         <span class="small"><a class="btn btn-info" href="{% url 'products' %}">Products Home</a> |
                         </span>
                         {% endif %}
-                        {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term
-                            }}"</strong>{% endif %}
+                        {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                     </p>
                 </div>
             </div>
