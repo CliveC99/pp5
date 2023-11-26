@@ -1,3 +1,8 @@
 .profile-heading {
     padding: 10%;
 }
+
+.order-history {
+    max-height: 416px;
+    overflow-y: auto;
+}
