@@ -113,6 +113,16 @@
     height: 5px;
 }
 
+#edit-form .form-control {
+    color: black;
+    border: 1px solid #000;
+}
+
+#add-product-form .form-control {
+    color: black;
+    border: 1px solid #000;
+}
+
 /**** MEDIA QUERIES ****/
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 500px) {

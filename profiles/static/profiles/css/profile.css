@@ -6,3 +6,18 @@
     max-height: 416px;
     overflow-y: auto;
 }
+
+#profile-update-form .form-control {
+    color: black;
+    border: 1px solid #000;
+}
+
+#profile-update-form input::placeholder {
+    color: #aab7c4;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #000;
+}
+
