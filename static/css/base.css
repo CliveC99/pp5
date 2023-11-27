@@ -21,7 +21,7 @@
 .home {
     background: url('/media/fk_home.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(150vh - 164px);
 }
 
 .nav-link {
@@ -121,7 +121,7 @@
     }
 
     .logo-text {
-    font-size: 1em;
+    font-size: 2em;
     }
 
     .logo-and-text {
