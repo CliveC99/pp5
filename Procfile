@@ -1,1 +1,1 @@
-web: gunicorn fkperformance.wsgi.application
+web: gunicorn fkperformance.wsgi:application
