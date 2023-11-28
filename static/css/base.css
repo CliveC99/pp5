@@ -155,11 +155,17 @@
         padding: 5px;
     }
 
-    .products-padding {
-        padding-top: 20%;
-    }
-
     #mc-embedded-subscribe-form{
         width: 250px;
+    }
+
+    .products-padding,
+    .checkout-padding,
+    .checkout-success-padding,
+    .add-product-padding,
+    .bag-padding,
+    .edit-product-padding,
+    .my-profile-padding {
+        padding-top: 30%;
     }
 }
