@@ -280,4 +280,34 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'`
  13. In the terminal add, commit and push.
  14. Ensure DEBUG = False in settings.py when making final deployment
 
+# Cloning
 
+1. Open up the repository [Car Reviews](https://github.com/CliveC99/car-rating)
+2. Above the list of files click "Code".
+3. Click if you would like to clone as "HTTPS", "SSH", or "GitHub CLI".
+4. Once selected press copy.
+5. Open Git Bash.
+6. Change the directory to where you want the clone to appear.
+7. Paste in the link you copied in step 4. (This is the line for my repository): <br>
+  `$ git clone https://github.com/CliveC99/car-rating.git`
+8. Press enter and the clone will happen.
+
+# Forking
+
+1. Open up the repository [Car Reviews](https://github.com/CliveC99/car-rating)
+2. Locate the fork button at the top right.
+3. Select an owner and repository name.
+4. Add a description (optional).
+5. Click "Create fork".
+6. The repository should appear in your repositories now.
+
+# **Git Commits**
+
+- I structured my git commits whenever I would add, change or update code.
+- I did this by using:
+
+   1. git status
+   2. git add (file name)
+   3. git commit -m (message)
+   4. git push.
+  ![Git Commits](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701168971/pp5%20readme/commits_twvgct.png)
