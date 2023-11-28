@@ -28,6 +28,7 @@ Live deoployed link on heroku: [FK Performance](https://pp5-fk-ff4c1b683208.hero
   
 - <p><a href="#wireframes">Wireframes</a></p>
 - <p><a href="#ux">UX</a></p>
+- - <p><a href="#SEO">SEO & Web Marketing</a></p>
 - <p><a href="#features">Features</a></p>
 - <p><a href="#manual-testing">Manual Testing</a></p>
 - <p><a href="#frameworks"> Framework / Programs Used / Technologies</a></p>
@@ -76,6 +77,30 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
 ### **Returning User**
 
 - As a ***returning user*** I can check my order history.
+
+
+# SEO
+* SEO & Web Marketing
+  
+ ## Web Marketing Strategies
+
+ * Facebook
+ ![FK Facebook](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701170850/pp5%20readme/1_llugue.png)
+  ![FK Facebook](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701170844/pp5%20readme/2_mq9niy.png)
+   ![FK Facebook](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701170850/pp5%20readme/3_xda4ff.png)
+   - Facebook is the number one way for a business to get their name out there. It also helpes the site get mentioned through word of mouth/sharing of posts.
+
+
+* Newsletter
+![Newsletter](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701171123/pp5%20readme/newsletter_mtwppu.png)
+
+- This newsletter can allow the site owner to send out emails with deals, this would boost people coming back to the site and spread the world around.
+
+* SEO
+  - There is a robots.txt and sitemap.xml for search engine crawlers and proper indexing.
+
+
+
 
 # Features
 
