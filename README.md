@@ -232,3 +232,49 @@ pip3 install urllib3==1.26.15
   5. Select your region
   6. Press review
   7. Copy your databse url
+
+
+### Heroku
+
+  1. Head over to [Heroku](https://dashboard.heroku.com/)
+  2. Create an app (your_app_name) and location.
+  3. Head to settings and click reveal config vars.
+  4. Create a new one called 'DATABASE_URL' (Copy in your database url)
+  5. In gitpod create a file called 'env.py'
+  6. Import 'os'
+  7. Paste `os.environ["DATABASE_URL"]` (Replace 'DATABASE_URL) with your URL
+  8. Add a secret key `os.environ["SECRET_KEY"] = "create_your_own"`
+  9. Head back to heroku config vars and add 'SECRET_KEY' and input your key.
+  10. In settings.py add
+      - `import os`
+      `import dj_database_url`
+      `if os.path.isfile("env.py):`
+      `import env`
+  11. Remove the secret key and replace it with `SECRET_KEY = os.environ.get('SECRET_KEY')` (This links with env.py)
+  12. Comment out the database content
+  13. Paste in: `DATABASES = {
+   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}`
+  14. Save all files and in the terminal paste `python3 manage.py migrate`
+
+### Static Files
+
+ 1. Head to [Cloudinary](https://cloudinary.com/ip/gr-sea-gg-brand-home-base?utm_source=google&utm_medium=search&utm_campaign=goog_selfserve_brand_wk22_replicate_core_branded_keyword&utm_term=1329&campaignid=17601148700&adgroupid=141182782954&keyword=cloudinary&device=c&matchtype=e&adposition=&gclid=Cj0KCQiA_P6dBhD1ARIsAAGI7HBiqtoSkOp8dv2sdvprV-d3z6NkMdyK0guRRH98shquMJ7QiCtVbJQaAnvIEALw_wcB)
+ 2. Head to dashboard and copy your CLOUDINARY_URL
+ 3. In env.py add `os.environ["CLOUDINARY_URL"] = "cloudinary://your_link`
+ 4. Add cloudinary url to heroku confic vars.
+ 5. Add a confic var `DISABLE_COLLECTSTATIC, 1`
+ 6. In settings.py add Cloudinary to 'Installed apps'`'cloudinary_storage',
+    'django.contrib.staticfiles',
+    'cloudinary',`
+ 7. Under STATIC_URL add: `STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'`
+ 8. Change the template directory to `'DIRS': [TEMPLATES_DIR],`
+ 9. In allowed hosts add heroku ["your_project_name.herokuapp.com", "YOUR_HOSTNAME"]
+ 10. In gitpod create 3 folder 'media, static and templates'
+ 11. Create a 'Procfile'
+ 12. Inside the Procfile add `web: gunicorn your_project_name.wsgi`
+ 13. In the terminal add, commit and push.
