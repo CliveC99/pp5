@@ -44,4 +44,35 @@ Live deoployed link on heroku: [FK Performance](https://pp5-fk-ff4c1b683208.hero
 
 I used Google Slides to show my wireframes so it would keep the README clean and tidy.
 
--[Wireframes](https://docs.google.com/presentation/d/e/2PACX-1vTvq7RfkkhhwUFfnMtxDri4pg1YBxltvv8aLAIw-k5ZMahMDOJz8y8-ix_la1Yn5Y7GHhJPMpyeThCK/pub?start=false&loop=false&delayms=15000) (Google Slides) 
+-[Wireframes](https://docs.google.com/presentation/d/e/2PACX-1vTvq7RfkkhhwUFfnMtxDri4pg1YBxltvv8aLAIw-k5ZMahMDOJz8y8-ix_la1Yn5Y7GHhJPMpyeThCK/pub?start=false&loop=false&delayms=15000) (Google Slides)
+
+# UX
+
+### **User Goals**
+
+I used a Kanban board to outline my progress [view here.](https://github.com/users/CliveC99/projects/3)
+
+- As a ***user*** I can view the page so that I can get the required information.
+- As a ***user*** I can register an account so that I can update my profile and check my order history.
+- As a ***user*** I can login to the account so that I can can update my profile information and view my orders.
+- As a ***user*** I can logout from the website so my personal information isn't left logged in.
+- As a ***user*** I can view the privacy policy.
+- As a ***user*** I can Create/Read/Update/Delete my profile information.
+- As a ***user*** I can click on an item so that I can get the product details.
+- As a ***user*** I can view items to add the item to my bag.
+- As a ***user*** I can view the bag.
+- As a ***user*** I can delete/update the items in the bag.
+- As a ***user*** there is a payment authentication for cards.
+- As a ***user*** I'm brought to a success page after payment.
+- As a ***user*** I can get popup messages.
+- As a ***user*** I can sign up to a newsletter in the proifle section.
+
+### **Owner Goals**
+
+- As a  ***Site Admin*** I can install libraries so that the required libraries are installed and ready to use.
+- As a ***Site Admin*** I can deploy the website early so that the site can be tested early.
+- As a ***Site Admin*** I can Create/Read/Update/Delete products on the site.
+
+### **Returning User**
+
+- As a ***returning user*** I can check my order history.
