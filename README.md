@@ -76,3 +76,21 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
 ### **Returning User**
 
 - As a ***returning user*** I can check my order history.
+
+# Features
+
+## **Exisiting Features**
+
+- Login
+- Regisiter
+- View items by category
+- Viww items by filter system
+- Search items
+- Add items to the bag
+- Checkout as a guest or registered user
+
+| Feature        |      |
+   | -------------  |:-------------:|
+   | Login | ![Login](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701164024/pp5%20readme/login_vrh5lx.png) |
+   | Registration | ![Registration](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701164024/pp5%20readme/register_ezx6zb.png) |
+
