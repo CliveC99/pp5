@@ -278,3 +278,6 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'`
  11. Create a 'Procfile'
  12. Inside the Procfile add `web: gunicorn your_project_name.wsgi`
  13. In the terminal add, commit and push.
+ 14. Ensure DEBUG = False in settings.py when making final deployment
+
+
