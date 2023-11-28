@@ -12,7 +12,7 @@ As a user you can:
 - Add items to the bag
 - Search items
 - View items by category
-- Viww items by filter system
+- View items by filter system
 - Checkout as a guest or registered user
 - And lots more!
 
@@ -85,7 +85,7 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
 - Regisiter
 - Logout
 - View items by category
-- Viww items by filter system
+- View items by filter system
 - Search items
 - Add items to the bag
 - Checkout as a guest or registered user
@@ -100,7 +100,7 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
    | Registration | ![Registration](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701164024/pp5%20readme/register_ezx6zb.png) |
    | Logout | ![Logout](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701165981/pp5%20readme/logout_w9nkxu.png) |
    | View items by category | ![View items by category](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166086/pp5%20readme/category_ehy0bd.png) |
-   | View items by filter system | ![Viww items by filter system](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166170/pp5%20readme/filter_xg3krg.png) |
+   | View items by filter system | ![View items by filter system](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166170/pp5%20readme/filter_xg3krg.png) |
    | Search Items | ![Search](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166190/pp5%20readme/search_yfloyo.png) |
    | Add Items | ![Add Items](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166287/pp5%20readme/add_nu5ngi.png) |
    | Checkout Guest/Register | ![Checkout](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166324/pp5%20readme/login-save-info_do7biz.png) |
@@ -108,3 +108,36 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
    | Update Quantity | ![Update Quantity](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166519/pp5%20readme/quantity-update_jnnnp1.png) |
    | Order Success | ![Order Success](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166536/pp5%20readme/order-success_dlxcoi.png) |
    | Order History | ![Order History](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166553/pp5%20readme/order-history_j3hhpa.png) |
+
+## Features to be added
+
+* Comments about a item, review system.
+
+# Manual Testing
+
+   | Feature        |    Expected   | Result       | Test |
+   | -------------  |:-------------:| -----:| -----: |
+   | Login | Logs the user in | The user is logged in correctly. | Try logging in with username and password |
+   | Register   | Registers the user to the site    | The user is registered to the site correctly. | Fill in the required fields. |
+   | Logout   | Logs user out   | User is logged out | Click log out user and confirm |
+   | View Products | Products show  | Products are there | Views products page |
+   | View products by category | Products appear by category   | Prodcuts appear per categorty | Go into each categort |
+   | View products by filter   | Products appear by filter | Products appear per filter | Check each filter |
+   | Search Items  | Product appears by search | Product appears by search | Search items |
+   | Add items to bag  | Items gets added to bag | Item appears in bag | Add items to bag |
+   | Checkout as guest or registered  | Option to login or save info | Option is given | Go to checkout logged in and logged out |
+   | Popup Messages  | Messages appear | Popups appear for different tasks | Try different task that produce a message |
+   | Update Quantity  | Quantity updates | Quantity does update | Add items and remove items |
+   | Order Success  | Order completes and shows order success page | Order success page shows | Order some items on the site |
+   | Order History  | Shows order history in profile | Failed - Grand total doesn't show - Explained further down | Order some items on the site |
+   
+
+   
+
+   | Testing        |    Expected   | Result       | Test |
+   | -------------  |:-------------:| -----:| -----: |
+   | Browsers | Works as normal. | No issues. | Use Chrome, Safari, Edge and Firefox |
+   | Links | Links work. | Links open as they should. | Open each link |
+   | Form validation | Fields are required to submit | Fields were required to submit the form | Submit the form with empty fields and with fields filled. |
+   | Responsiveness | Should not break at any screen size | Didn't break at any size | Drag the screen down to 320px |
+   | Lighthouse | Scores are good | Performance, Accessibility, Best Practice, SEO > 89%  | Chrome Developer Tools Lighthouse |
