@@ -195,3 +195,30 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
   - This was unresolved.
   - After talking with tutor support and running out of weekly hours we couldn't find a fix sadly. After checking Slack, checking Google and debugging its unresolved.
   - Unfortunately this bug didn't exist on my local enviorment. Order Histort works as it should locally (Still does) but on the deployed version this is bug.
+
+# Creation
+
+   1. Head over to [CI Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+   2. Press 'Use this template'
+   3. Create a new repository.
+   4. Select a name.
+   5. Click create.
+   6. Click gitpod.
+   7. In the terminal install Django and Gunicorn
+      - pip3 install django gunicorn
+   8. Install the required libaries
+      - pip3 install dj_database_url==0.5.0 psycopg2
+   9. Install Cloudinary libaries
+      - pip3 install dj3-cloudinary-storage
+pip3 install urllib3==1.26.15
+  10. Create requirements file
+      - pip3 freeze --local > requirements.txt
+  11. Create Project
+      - django-admin startproject your_project_name .
+  12. Create App
+      - python3 manage.py startapp your_app
+  13. In settings.py add your app name inside 'Installed apps' and save the file
+  14. Migrate your changes
+       - python3 manage.py migrate
+  15. To run the server use 'python3 manage.py runserver'
+  16. Inside of settings.py in the 'Allowed hosts' field add your server address
