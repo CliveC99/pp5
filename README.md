@@ -141,3 +141,38 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
    | Form validation | Fields are required to submit | Fields were required to submit the form | Submit the form with empty fields and with fields filled. |
    | Responsiveness | Should not break at any screen size | Didn't break at any size | Drag the screen down to 320px |
    | Lighthouse | Scores are good | Performance, Accessibility, Best Practice, SEO > 89%  | Chrome Developer Tools Lighthouse |
+
+# Frameworks
+
+- [Django](https://www.djangoproject.com/)
+  - Django was used as the framework and logic of the project.
+- [Bootstrap](https://getbootstrap.com/)
+  - Bootstrap was used for the styling of the site.
+- [Git](https://git-scm.com/)
+  - Git was used for version control
+- [Github](https://github.com/)
+  - Github was used for storing the code.
+- [Gitpod](https://gitpod.io/workspaces)
+  - Gitpod was used for coding.
+- [Codeanywhere](https://app.codeanywhere.com/)
+  - Switched to Codeanywhere during the project for coding.
+- [Heroku](https://id.heroku.com/)
+  - Heroku was used for live deployment.
+- [Balsamiq](https://balsamiq.com/)
+  - Balsamiq was used for wireframes.
+- [Google Slides](https://www.google.com/slides/about/)
+  - Google Slides was used for storing large images.
+- [Gunicorn](https://gunicorn.org/)
+  - Gunicorn was used for the server for heroku
+- [Cloudinary](https://cloudinary.com/)
+  - Cloudinary was used for image storage.
+- [Pillow](https://pypi.org/project/Pillow/)
+  - Pillow was used for an image libary
+- [HTML](https://en.wikipedia.org/wiki/HTML/)
+  - HTML was used for the templates.
+- [JavaScript](https://www.javascript.com/)
+  - Javascript was used to get users info.
+- [Python](https://www.python.org/)
+  - Python was used for functionality of the site.
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+  - CSS was used for extra styling.
