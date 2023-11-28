@@ -231,3 +231,4 @@ pip3 install urllib3==1.26.15
   4. Set up your free plan
   5. Select your region
   6. Press review
+  7. Copy your databse url
