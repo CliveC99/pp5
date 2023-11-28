@@ -198,10 +198,11 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
   | Bugs/Errors        |   Explain   | Fix |
    | -------------  |:-------------:| -----: |
    | Searched items wasn't showing | I was having issues with searched item text wasn't showing | There was an indention error  |
-   | Delivery price was wrong | I was having issues with the delivery price being wrong | I fixed this by adding ``{{ item.product.price | calculate_total:item.quantity }}`` |
+   | Delivery price was wrong | I was having issues with the delivery price being wrong | I fixed this by adding ``{{ item.product.price  calculate_total:item.quantity }}`` |
    | Delivery too high | I was having issues with the the delivery being too high | I fixed this by changing the percentage to ``STANDARD_DELIVERY_PERCENTAGE = 0.1`` |
    | Overlapping | I was having issues with overlapping information on mobile | Turns out I had ``{% include 'includes/mobile-top-header.html' %}`` in twice|
    | Home Button | Home button wasn't an option on medium screens | I solved this with adding ``d-lg-none`` |
+   | DB Issue | When I changed to codeanywhere my DB file didn't transfer over from gitpod | With the help of tutor support. I had to pull the info from my DB and put it in a json file using ``python3 manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json`` |
    | Order History | Order Total, Delivery Total and Grand total not updating | Unresolved - Explained below. |
 
 ## Unresolved Bugs
