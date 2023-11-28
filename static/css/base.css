@@ -8,6 +8,11 @@
     padding-bottom: 10%;
 }
 
+.error-padding {
+    padding: 10%
+}
+
+
 .overlay {
     height: 100%;
     width: 100%;
