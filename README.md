@@ -222,3 +222,12 @@ pip3 install urllib3==1.26.15
        - python3 manage.py migrate
   15. To run the server use 'python3 manage.py runserver'
   16. Inside of settings.py in the 'Allowed hosts' field add your server address
+
+### DataBase
+
+  1. Head over to [Elephantsql](https://www.elephantsql.com/)
+  2. Create an account
+  3. Click create new instance
+  4. Set up your free plan
+  5. Select your region
+  6. Press review
