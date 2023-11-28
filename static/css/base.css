@@ -3,23 +3,6 @@
     text-transform: uppercase;
 }
 
-.forms {
-    padding-top: 20%;
-    padding-bottom: 10%;
-}
-
-.error-padding {
-    padding: 10%
-}
-
-#mc_embed_signup {
-    background: #fff;
-    false;
-    clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
-    width: 500px;
-}
-
 
 .overlay {
     height: 100%;
@@ -39,6 +22,62 @@
 
 .nav-link {
     color: green;
+}
+
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+.message-container { 
+    position: fixed;
+    top: 10%;
+    right: 1%;
+    z-index: 999999;
+}
+
+/**** POPUP MESSAGE STYLING ****/
+
+.bag-notifaction-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 5px;
+}
+
+/**** FORM EDITING STYLING ****/
+
+#edit-form .form-control {
+    color: black;
+    border: 1px solid #000;
+}
+
+#add-product-form .form-control {
+    color: black;
+    border: 1px solid #000;
+}
+
+/* PADDING STYLING */
+
+.forms {
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+
+.error-padding {
+    padding: 10%
 }
 
 .signup {
@@ -78,62 +117,33 @@
     font-size: 20px;
     color: white;
     text-decoration: none !important;
-    
+
 }
 
-.products-padding, 
-.checkout-padding, 
-.checkout-success-padding, 
+.products-padding,
+.checkout-padding,
+.checkout-success-padding,
 .add-product-padding,
-.add-product-padding{
+.add-product-padding {
     padding-top: 10%;
 }
 
-.product-detail-padding  {
+.product-detail-padding {
     padding-top: 8%;
-}
-
-.btt-button {
-    height: 42px;
-    width: 42px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
 }
 
 .bag-padding {
     padding-top: 10%;
 }
 
-.message-container { 
-    position: fixed;
-    top: 10%;
-    right: 1%;
-    z-index: 999999;
-}
+/**** MAILCHIMP STYLING ****/
 
-.bag-notifaction-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.custom-toast {
-    overflow: visible;
-}
-
-.toast-capper {
-    height: 5px;
-}
-
-#edit-form .form-control {
-    color: black;
-    border: 1px solid #000;
-}
-
-#add-product-form .form-control {
-    color: black;
-    border: 1px solid #000;
+#mc_embed_signup {
+    background: #fff;
+    false;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 500px;
 }
 
 /**** MEDIA QUERIES ****/

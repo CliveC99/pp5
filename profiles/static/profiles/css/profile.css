@@ -1,3 +1,4 @@
+/* PROFILE PAGE STYLING */
 .profile-heading {
     padding: 10%;
 }
@@ -6,6 +7,8 @@
     max-height: 416px;
     overflow-y: auto;
 }
+
+/* PROEFILE UPDATE FORM STYLING */
 
 #profile-update-form .form-control {
     color: black;
