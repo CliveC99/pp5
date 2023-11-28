@@ -176,7 +176,22 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
   - Python was used for functionality of the site.
 - [CSS](https://en.wikipedia.org/wiki/CSS)
   - CSS was used for extra styling.
-
+- [Django-Countries](https://pypi.org/project/django-countries/)
+  - Django-Countries for using 2 letter terms.
+- [Stripe](https://stripe.com/ie)
+  - Stripe for card payments.
+- [Mailchimp](https://mailchimp.com/)
+  - Mailchimp for the newsletter.
+- [AWS](https://aws.amazon.com/?nc2=h_lg)
+  - AWS for storing static files.
+- [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
+  - Boto3 for static files.
+- [S3 Transfer](https://aws.amazon.com/s3/transfer-acceleration/)
+  - S3 Transfer for static files.
+- [Gmail](https://mail.google.com/)
+  - Gnail for sending verifaction emails.
+   
+  
 
 # Bugs and Fixes
 
