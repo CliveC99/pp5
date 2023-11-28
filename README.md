@@ -176,3 +176,22 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
   - Python was used for functionality of the site.
 - [CSS](https://en.wikipedia.org/wiki/CSS)
   - CSS was used for extra styling.
+
+
+# Bugs and Fixes
+
+  | Bugs/Errors        |   Explain   | Fix |
+   | -------------  |:-------------:| -----: |
+   | Searched items wasn't showing | I was having issues with searched item text wasn't showing | There was an indention error  |
+   | Delivery price was wrong | I was having issues with the delivery price being wrong | I fixed this by adding ``{{ item.product.price | calculate_total:item.quantity }}`` |
+   | Delivery too high | I was having issues with the the delivery being too high | I fixed this by changing the percentage to ``STANDARD_DELIVERY_PERCENTAGE = 0.1`` |
+   | Overlapping | I was having issues with overlapping information on mobile | Turns out I had ``{% include 'includes/mobile-top-header.html' %}`` in twice|
+   | Home Button | Home button wasn't an option on medium screens | I solved this with adding ``d-lg-none`` |
+   | Order History | Order Total, Delivery Total and Grand total not updating | Unresolved - Explained below. |
+
+## Unresolved Bugs
+
+* Order History
+  - This was unresolved.
+  - After talking with tutor support and running out of weekly hours we couldn't find a fix sadly. After checking Slack, checking Google and debugging its unresolved.
+  - Unfortunately this bug didn't exist on my local enviorment. Order Histort works as it should locally (Still does) but on the deployed version this is bug.
