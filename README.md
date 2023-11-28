@@ -83,14 +83,28 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
 
 - Login
 - Regisiter
+- Logout
 - View items by category
 - Viww items by filter system
 - Search items
 - Add items to the bag
 - Checkout as a guest or registered user
+- Popup messages
+- Update Quantity
+- Order Success
+- Order History
 
 | Feature        |      |
    | -------------  |:-------------:|
    | Login | ![Login](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701164024/pp5%20readme/login_vrh5lx.png) |
    | Registration | ![Registration](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701164024/pp5%20readme/register_ezx6zb.png) |
-
+   | Logout | ![Logout](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701165981/pp5%20readme/logout_w9nkxu.png) |
+   | View items by category | ![View items by category](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166086/pp5%20readme/category_ehy0bd.png) |
+   | View items by filter system | ![Viww items by filter system](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166170/pp5%20readme/filter_xg3krg.png) |
+   | Search Items | ![Search](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166190/pp5%20readme/search_yfloyo.png) |
+   | Add Items | ![Add Items](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166287/pp5%20readme/add_nu5ngi.png) |
+   | Checkout Guest/Register | ![Checkout](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166324/pp5%20readme/login-save-info_do7biz.png) |
+   | Popup Messages | ![Popup](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166486/pp5%20readme/popup_oh9zcg.png) |
+   | Update Quantity | ![Update Quantity](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166519/pp5%20readme/quantity-update_jnnnp1.png) |
+   | Order Success | ![Order Success](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166536/pp5%20readme/order-success_dlxcoi.png) |
+   | Order History | ![Order History](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166553/pp5%20readme/order-history_j3hhpa.png) |
