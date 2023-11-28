@@ -38,3 +38,10 @@ Live deoployed link on heroku: [FK Performance](https://pp5-fk-ff4c1b683208.hero
 - <p><a href="#forking">Forking</a></p>
 - <p><a href="#git-commits">Git Commits</a></p>
 - <p><a href="#credits">Credits</a></p>
+
+
+# Wireframes
+
+I used Google Slides to show my wireframes so it would keep the README clean and tidy.
+
+-[Wireframes](https://docs.google.com/presentation/d/e/2PACX-1vTvq7RfkkhhwUFfnMtxDri4pg1YBxltvv8aLAIw-k5ZMahMDOJz8y8-ix_la1Yn5Y7GHhJPMpyeThCK/pub?start=false&loop=false&delayms=15000) (Google Slides) 
