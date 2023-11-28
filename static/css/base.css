@@ -150,4 +150,8 @@
     .products-padding {
         padding-top: 20%;
     }
+
+    #mc-embedded-subscribe-form{
+        width: 250px;
+    }
 }
