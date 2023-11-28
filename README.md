@@ -327,3 +327,16 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'`
    3. git commit -m (message)
    4. git push.
   ![Git Commits](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701168971/pp5%20readme/commits_twvgct.png)
+
+
+# Credits
+
+- I got help and inspiration from Boutique-Ado
+  - [Boutique-Ado](https://github.com/Code-Institute-Solutions/Boutique-Ado)
+- I got help with form succession page from [Django docs](https://docs.djangoproject.com/en/4.2/topics/forms/)
+- I got help from [Pillow](https://pypi.org/project/Pillow/), [Cloudinary Python SDK](https://cloudinary.com/documentation/django_integration), [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) etc.
+- I used [Am I Responsive?](https://ui.dev/amiresponsive) to check was the site responive.
+- This project would not be possible without the help of my mentor (Rory_Patrick), my friends, and my facilitator (Chris Quinn) and Tutor Support.
+- I would also like to thank the private "Novemeber 2022-UCD" group on slack for the all the support.
+
+ <p><a href="#table-of-contents">Back to table of contents.</a></p>
