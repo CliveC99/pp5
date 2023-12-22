@@ -82,6 +82,9 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
 # SEO
 * SEO & Web Marketing
   
+ ## Business Model
+FK Performance operates on an e-commerce platform for car enthusiasts selling car parts and car accessories. Our business model focuses on the online sale and distribution of car parts and car accessories. We offer a range of car parts, enabling customers to find the correct extras to add to their cars! Our revenue is generated through direct sales of these car parts. We maintain community engagement approach, giving the user the ability to give feedback and get in contact through a newsletter and social media.
+
  ## Web Marketing Strategies
 
  * Facebook
