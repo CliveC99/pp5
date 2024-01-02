@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['8001-clivec99-pp5-yvom3hp9pv.us2.codeanyapp.com', 'pp5-fk.herokuapp.com', 'pp5-fk-ff4c1b683208.herokuapp.com']
+ALLOWED_HOSTS = ['8000-clivec99-pp5-mr9tnbf08s.us2.codeanyapp.com', 'pp5-fk.herokuapp.com', 'pp5-fk-ff4c1b683208.herokuapp.com']
 
 
 # Application definition

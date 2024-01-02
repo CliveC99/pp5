@@ -6,64 +6,64 @@
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 hover" href="#" id="all-products-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item hover">By Price</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item hover">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item hover">All Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="alloys"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 hover" href="#" id="alloys"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Alloys
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=18_alloys" class="dropdown-item">18" Alloys</a>
-                <a href="{% url 'products' %}?category=19_alloys" class="dropdown-item">19" Alloys</a>
-                <a href="{% url 'products' %}?category=18_alloys,19_alloys" class="dropdown-item">All Alloys</a>
+                <a href="{% url 'products' %}?category=18_alloys" class="dropdown-item hover">18" Alloys</a>
+                <a href="{% url 'products' %}?category=19_alloys" class="dropdown-item hover">19" Alloys</a>
+                <a href="{% url 'products' %}?category=18_alloys,19_alloys" class="dropdown-item hover">All Alloys</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="coilovers"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 hover" href="#" id="coilovers"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Coilovers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=vw_coilovers" class="dropdown-item">VW Coilovers</a>
-                <a href="{% url 'products' %}?category=bmw_coilovers" class="dropdown-item">BMW Coilovers</a>
-                <a href="{% url 'products' %}?category=audi_coilovers" class="dropdown-item">AUDI Coilovers</a>
-                <a href="{% url 'products' %}?category=vw_coilovers,bmw_coilovers,audi_coilovers" class="dropdown-item">All Coilovers</a>
+                <a href="{% url 'products' %}?category=vw_coilovers" class="dropdown-item hover">VW Coilovers</a>
+                <a href="{% url 'products' %}?category=bmw_coilovers" class="dropdown-item hover">BMW Coilovers</a>
+                <a href="{% url 'products' %}?category=audi_coilovers" class="dropdown-item hover">AUDI Coilovers</a>
+                <a href="{% url 'products' %}?category=vw_coilovers,bmw_coilovers,audi_coilovers" class="dropdown-item hover">All Coilovers</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="spoilers"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 hover" href="#" id="spoilers"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Spoilers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=vw_spoilers" class="dropdown-item">VW Spoilers</a>
-                <a href="{% url 'products' %}?category=bmw_spoilers" class="dropdown-item">BMW Spoilers</a>
-                <a href="{% url 'products' %}?category=ford_spoilers" class="dropdown-item">FORD Spoilers</a>
-                <a href="{% url 'products' %}?category=vw_spoilers,bmw_spoilers,ford_spoilers" class="dropdown-item">All Spoilers</a>
+                <a href="{% url 'products' %}?category=vw_spoilers" class="dropdown-item hover">VW Spoilers</a>
+                <a href="{% url 'products' %}?category=bmw_spoilers" class="dropdown-item hover">BMW Spoilers</a>
+                <a href="{% url 'products' %}?category=ford_spoilers" class="dropdown-item hover">FORD Spoilers</a>
+                <a href="{% url 'products' %}?category=vw_spoilers,bmw_spoilers,ford_spoilers hover" class="dropdown-item hover">All Spoilers</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="essentials-link" data-toggle="dropdown"
+            <a class="logo-font font-weight-bold nav-link text-black hover" href="#" id="essentials-link" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 Car Essentials
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=interior" class="dropdown-item">Interior</a>
-                <a href="{% url 'products' %}?category=exterior" class="dropdown-item">Exterior</a>
-                <a href="{% url 'products' %}?category=interior,exterior" class="dropdown-item">All Car Essentials</a>
+                <a href="{% url 'products' %}?category=interior" class="dropdown-item hover">Interior</a>
+                <a href="{% url 'products' %}?category=exterior" class="dropdown-item hover">Exterior</a>
+                <a href="{% url 'products' %}?category=interior,exterior" class="dropdown-item hover">All Car Essentials</a>
             </div>
         </li>
     </ul>

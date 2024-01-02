@@ -12,9 +12,13 @@
     border: 1px solid black;
     padding: 5px 15px;
     border-color: brown;
-    color: green;
-
+    color: black;
 }
+
+.hover:hover {
+    background-color: green;
+}
+
 
 .overlay {
     height: 100%;
