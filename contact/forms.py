@@ -7,11 +7,10 @@ class ContactForm(forms.ModelForm):
         model = Contact
         fields = ('full_name', 'email', 'description',)
     
-    def __init__(self, *args, **kwargs)
-    placeholders = {
-        'full_name': 'Full Name',
-        'email': 'Email',
-        'description': 'Description',
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        placeholders = {
+            'full_name': 'Full Name',
+            'email': 'Email',
+            'description': 'Description',
     }
-
-    self.fields['full_name'].widget.attrs['autofocus'] = True
