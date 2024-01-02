@@ -3,6 +3,18 @@
     text-transform: uppercase;
 }
 
+#home-link,
+#all-products-link,
+#alloys,
+#coilovers,
+#spoilers,
+#essentials-link {
+    border: 1px solid black;
+    padding: 5px 15px;
+    border-color: brown;
+    color: green;
+
+}
 
 .overlay {
     height: 100%;
@@ -34,7 +46,7 @@
 }
 
 
-.message-container { 
+.message-container {
     position: fixed;
     top: 10%;
     right: 1%;
@@ -154,7 +166,7 @@
     }
 
     .logo-text {
-    font-size: 2em;
+        font-size: 2em;
     }
 
     .logo-and-text {
@@ -165,7 +177,7 @@
         padding: 5px;
     }
 
-    #mc-embedded-subscribe-form{
+    #mc-embedded-subscribe-form {
         width: 250px;
     }
 
