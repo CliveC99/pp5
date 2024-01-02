@@ -61,6 +61,14 @@
     overflow-y: auto;
 }
 
+.toast-header {
+    text-transform: uppercase;
+}
+
+.toast-body {
+    color: green;
+}
+
 .custom-toast {
     overflow: visible;
 }
