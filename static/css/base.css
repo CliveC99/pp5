@@ -154,7 +154,7 @@
     padding: 3px 15px;
     font-size: 20px;
     color: white;
-    text-decoration: none !important;
+    text-decoration: none;
 
 }
 
@@ -174,15 +174,6 @@
     padding-top: 10%;
 }
 
-/**** MAILCHIMP STYLING ****/
-
-#mc_embed_signup {
-    background: #fff;
-    false;
-    clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
-    width: 500px;
-}
 
 /**** MEDIA QUERIES ****/
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -201,10 +192,6 @@
 
     .button-shop-now {
         padding: 5px;
-    }
-
-    #mc-embedded-subscribe-form {
-        width: 250px;
     }
 
     .products-padding,
