@@ -3,6 +3,10 @@
     text-transform: uppercase;
 }
 
+.logo:hover {
+    text-decoration: underline;
+}
+
 .privacy-button {
     border: 1px solid black;
     padding: 5px 15px;
