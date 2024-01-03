@@ -3,6 +3,19 @@
     text-transform: uppercase;
 }
 
+.privacy-button {
+    border: 1px solid black;
+    padding: 5px 15px;
+    border-color: brown;
+    color: black;
+}
+
+.privacy-button:hover {
+    background-color: green;
+    color: black;
+    text-decoration: none;
+}
+
 
 #home-link,
 #all-products-link,
