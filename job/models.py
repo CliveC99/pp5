@@ -4,15 +4,13 @@ from django_countries.fields import CountryField
 class JobApplication(models.Model):
     full_name = models.CharField(max_length=50, null=False, blank=False)
     job_choices = [
-        ("Sales Assistant", "Sales Assistant"),
         ("Store Manager", "Store Manager"),
-        ("Sales", "Sales"),
+        ("Sales Manager", "Sales Manager"),
         ("Delivery Driver", "Delivery Driver"),
-        ("Mechanic", "Mechanic"),
-        ("Window Tinter", "Window Tinter"),
+        ("Delivery Driver (International)", "Delivery Driver (International)"),
     ]
 
-    job = models.CharField(choices=job_choices, null=True, blank=True, max_length=50)
+    job = models.CharField(choices=job_choices, null=True, blank=False, max_length=50)
     email = models.EmailField(max_length=254, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
     country = CountryField(blank_label='Country *', null=False, blank=False)

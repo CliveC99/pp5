@@ -5,10 +5,10 @@ from django.contrib import messages
 
 def job(request):
     if request.method == 'POST':
-        job = JobForm(request.POST, request.FILES)
+        form = JobForm(request.POST, request.FILES)
         if form.is_valid():
             job = form.save()
-            messages.success(request, 'Successfully Applied!')
+            messages.success(request, 'Successfully Applied for the job!')
             return redirect(reverse('job'))
         else:
             messages.error(request,

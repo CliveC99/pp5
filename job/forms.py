@@ -8,7 +8,7 @@ class JobForm(forms.ModelForm):
         fields = ('full_name', 'job', 'email', 'phone_number',
                   'country', 'postcode',
                   'town_or_city', 'street_address1',
-                  'street_address2',)
+                  'street_address2', 'county',)
     
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -22,5 +22,6 @@ class JobForm(forms.ModelForm):
             'town_or_city': 'Town or City',
             'street_address1': 'Street Address 1',
             'street_address2': 'Street Address 2',
+            'county': 'County',
 
     }
