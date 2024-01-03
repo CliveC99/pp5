@@ -7,6 +7,3 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.full_name
-
-    def get_friendly_name(self):
-        return self.email
