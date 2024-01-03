@@ -28,6 +28,7 @@ Live deoployed link on heroku: [FK Performance](https://pp5-fk-ff4c1b683208.hero
   
 - <p><a href="#wireframes">Wireframes</a></p>
 - <p><a href="#ux">UX</a></p>
+- <p><a href="#models">Custom Models</a></p>
 -  <p><a href="#SEO">SEO & Web Marketing</a></p>
 - <p><a href="#features">Features</a></p>
 - <p><a href="#manual-testing">Manual Testing</a></p>
@@ -77,6 +78,37 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
 ### **Returning User**
 
 - As a ***returning user*** I can check my order history.
+
+
+# Models
+## Custom Models
+
+1. For my first custom models I decided to make a contact page for a site user to get in contact with the site admins. This can be viewed on the admin panel when users interact.
+   - ``full_name = models.CharField(max_length=50, null=False, blank=False)``
+   - `` email = models.EmailField(max_length=254, null=False, blank=False)``
+   - ``description = models.TextField()``
+2. For my second custom models I decided to make a newsletter form for a site user to subscribe to. The emails registered can be viewed in admin panel when a user subscribes.
+   - ``email = models.EmailField(max_length=254, null=False, blank=False)``
+  3. For my third custom model I decided to make a job application form for interested site users to apply for a job. The applications can be viewed in the admin panel when a user apply for a selected job through the dropdown choice box in the form.
+     - `` full_name = models.CharField(max_length=50, null=False, blank=False)``
+     - ``job_choices = [
+        ("Store Manager", "Store Manager"),
+        ("Sales Manager", "Sales Manager"),
+        ("Delivery Driver", "Delivery Driver"),
+        ("Delivery Driver (International)", "Delivery Driver (International)"),
+    ]``
+
+     - ``job = models.CharField(choices=job_choices, null=True, blank=False, max_length=50)``
+     - `` email = models.EmailField(max_length=254, null=False, blank=False)``
+     - `` phone_number = models.CharField(max_length=20, null=False, blank=False)``
+     - ``country = CountryField(blank_label='Country *', null=False, blank=False)``
+     - ``postcode = models.CharField(max_length=20, null=True, blank=True)``
+     - ``town_or_city = models.CharField(max_length=40, null=False, blank=False)``
+     - ``street_address1 = models.CharField(max_length=80, null=False, blank=False)``
+     - ``street_address2 = models.CharField(max_length=80, null=True, blank=True)``
+     - ``county = models.CharField(max_length=80, null=True, blank=True)``
+  
+  The reason I decided to use these models for my site is that I belivle it can benifit an ecommerce website massively.
 
 
 # SEO
