@@ -83,13 +83,15 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
 # Models
 ## Custom Models
 
+***These can be viewed inside the 'My Account' dropdown, users have to be logged in for these options.***
+
 1. For my first custom models I decided to make a contact page for a site user to get in contact with the site admins. This can be viewed on the admin panel when users interact.
    - ``full_name = models.CharField(max_length=50, null=False, blank=False)``
    - `` email = models.EmailField(max_length=254, null=False, blank=False)``
    - ``description = models.TextField()``
-2. For my second custom models I decided to make a newsletter form for a site user to subscribe to. The emails registered can be viewed in admin panel when a user subscribes.
+2. For my second custom models I decided to make a newsletter form for a site user to subscribe to. The emails registered can be viewed in the admin panel when a user subscribes.
    - ``email = models.EmailField(max_length=254, null=False, blank=False)``
-  3. For my third custom model I decided to make a job application form for interested site users to apply for a job. The applications can be viewed in the admin panel when a user apply for a selected job through the dropdown choice box in the form.
+  3. For my third custom model I decided to make a job application form for interested site users to apply for a job. The applications can be viewed in the admin panel when a user applys for a selected job through the dropdown choice box in the form.
      - `` full_name = models.CharField(max_length=50, null=False, blank=False)``
      - ``job_choices = [
         ("Store Manager", "Store Manager"),
@@ -108,7 +110,7 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
      - ``street_address2 = models.CharField(max_length=80, null=True, blank=True)``
      - ``county = models.CharField(max_length=80, null=True, blank=True)``
   
-  The reason I decided to use these models for my site is that I belivle it can benifit an ecommerce website massively.
+  The reason I decided to use these models for my site is that I belive it can benifit an ecommerce website massively.
 
 
 # SEO
