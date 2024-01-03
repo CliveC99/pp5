@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['8000-clivec99-pp5-mr9tnbf08s.us2.codeanyapp.com', 'pp5-fk.herokuapp.com', 'pp5-fk-ff4c1b683208.herokuapp.com']
 
@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'checkout',
     'storages',
     'contact',
+    'newsletter',
 ]
 
 MIDDLEWARE = [
