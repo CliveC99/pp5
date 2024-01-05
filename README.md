@@ -68,6 +68,8 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
 - As a ***user*** I'm brought to a success page after payment.
 - As a ***user*** I can get popup messages.
 - As a ***user*** I can sign up to a newsletter in the my account dropdown section.
+- As a ***user*** I can contact the site to get the information I require.
+- As a ***user*** I can apply for a job to further my career.
 
 ### **Owner Goals**
 
