@@ -20,7 +20,7 @@ This is my fifth portfolio project for Code Institute. I will demonstrate my lea
 
 Live deoployed link on heroku: [FK Performance](https://pp5-fk-ff4c1b683208.herokuapp.com/)
 
-![Am I Responsive?](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701161969/pp5%20readme/am_i_responsive_qi8qvm.png)
+![Am I Responsive?](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1704443913/pp5%20readme/am_i_responsive_hmgcgb.png)
 
 ### **Disclaimer if you would like to open any links in a new tab use `Ctrl` and click the link.**
 
@@ -67,7 +67,7 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
 - As a ***user*** there is a payment authentication for cards.
 - As a ***user*** I'm brought to a success page after payment.
 - As a ***user*** I can get popup messages.
-- As a ***user*** I can sign up to a newsletter in the proifle section.
+- As a ***user*** I can sign up to a newsletter in the my account dropdown section.
 
 ### **Owner Goals**
 
@@ -129,7 +129,7 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
 
 
 * Newsletter
-![Newsletter](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701171123/pp5%20readme/newsletter_mtwppu.png)
+![Newsletter](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1704444044/pp5%20readme/newsletter_kcbpfi.png)
 
 - This newsletter can allow the site owner to send out emails with deals, this would boost people coming back to the site and spread the world around.
 
@@ -155,13 +155,15 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
 - Update Quantity
 - Order Success
 - Order History
+- Contact Section
+- Job Application Section
 
 | Feature        |      |
    | -------------  |:-------------:|
    | Login | ![Login](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701164024/pp5%20readme/login_vrh5lx.png) |
    | Registration | ![Registration](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701164024/pp5%20readme/register_ezx6zb.png) |
    | Logout | ![Logout](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701165981/pp5%20readme/logout_w9nkxu.png) |
-   | View items by category | ![View items by category](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166086/pp5%20readme/category_ehy0bd.png) |
+   | View items by category | ![View items by category](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1704444191/pp5%20readme/categories_xmzvtj.png) |
    | View items by filter system | ![View items by filter system](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166170/pp5%20readme/filter_xg3krg.png) |
    | Search Items | ![Search](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166190/pp5%20readme/search_yfloyo.png) |
    | Add Items | ![Add Items](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166287/pp5%20readme/add_nu5ngi.png) |
@@ -170,6 +172,8 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
    | Update Quantity | ![Update Quantity](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166519/pp5%20readme/quantity-update_jnnnp1.png) |
    | Order Success | ![Order Success](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166536/pp5%20readme/order-success_dlxcoi.png) |
    | Order History | ![Order History](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166553/pp5%20readme/order-history_j3hhpa.png) |
+   | Contact Section | ![Contact Section](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1704444314/pp5%20readme/contact_re592k.png) |
+   | Job Application Section | ![Job Application Section](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1704444443/pp5%20readme/job_application_nwf9dq.png) |
 
 ## Features to be added
 
@@ -183,7 +187,7 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
    | Register   | Registers the user to the site    | The user is registered to the site correctly. | Fill in the required fields. |
    | Logout   | Logs user out   | User is logged out | Click log out user and confirm |
    | View Products | Products show  | Products are there | Views products page |
-   | View products by category | Products appear by category   | Prodcuts appear per categorty | Go into each categort |
+   | View products by category | Products appear by category   | Prodcuts appear per categorty | Go into each category |
    | View products by filter   | Products appear by filter | Products appear per filter | Check each filter |
    | Search Items  | Product appears by search | Product appears by search | Search items |
    | Add items to bag  | Items gets added to bag | Item appears in bag | Add items to bag |
@@ -192,6 +196,9 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
    | Update Quantity  | Quantity updates | Quantity does update | Add items and remove items |
    | Order Success  | Order completes and shows order success page | Order success page shows | Order some items on the site |
    | Order History  | Shows order history in profile | Failed - Grand total doesn't show - Explained further down | Order some items on the site |
+   | Contact Section  | Shows user is subscribed | Shows user subscribed - Email is logged to Admin Panel | Enter an email and press subscribe |
+   | Job Application Section  | Applied for the job when the form submits | Shows user applied - Details is logged to Admin Panel | Fill out the form and submit |
+   
    
 
    
@@ -242,8 +249,6 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
   - Django-Countries for using 2 letter terms.
 - [Stripe](https://stripe.com/ie)
   - Stripe for card payments.
-- [Mailchimp](https://mailchimp.com/)
-  - Mailchimp for the newsletter.
 - [AWS](https://aws.amazon.com/?nc2=h_lg)
   - AWS for storing static files.
 - [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
