@@ -51,7 +51,7 @@ class Order(models.Model):
         """
         if not self.order_number:
             self.order_number = self._generate_order_number()
-        update_total()
+        self.update_total()
         super().save(*args, **kwargs)
         
 
