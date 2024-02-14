@@ -11,7 +11,7 @@ class JobForm(forms.ModelForm):
                   'town_or_city', 'street_address1',
                   'street_address2', 'county',)
         widgets = {
-            'phone': forms.TextInput(attrs={'pattern': r'^\+?[0-9]+$',
+            'phone_number': forms.TextInput(attrs={'pattern': r'^\+?[0-9]+$',
                                             'title': 'Enter a valid phone number.'}),
         }
     
