@@ -9,8 +9,10 @@ class JobApplication(models.Model):
         ("Delivery Driver", "Delivery Driver"),
         ("Delivery Driver (International)", "Delivery Driver (International)"),
     ]
+
     job = models.CharField(choices=job_choices, null=True, blank=False, max_length=50)
     email = models.EmailField(max_length=254, null=False, blank=False)
+    phone_number = models.IntegerField(default='1234567890')
     country = CountryField(blank_label='Country *', null=False, blank=False)
     postcode = models.CharField(max_length=20, null=True, blank=True)
     town_or_city = models.CharField(max_length=40, null=False, blank=False)
