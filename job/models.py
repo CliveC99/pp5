@@ -9,7 +9,6 @@ class JobApplication(models.Model):
         ("Delivery Driver", "Delivery Driver"),
         ("Delivery Driver (International)", "Delivery Driver (International)"),
     ]
-
     job = models.CharField(choices=job_choices, null=True, blank=False, max_length=50)
     email = models.EmailField(max_length=254, null=False, blank=False)
     country = CountryField(blank_label='Country *', null=False, blank=False)
