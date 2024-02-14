@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'contact',
     'newsletter',
     'job',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
