@@ -1,5 +1,6 @@
 from django.db import models
 from django_countries.fields import CountryField
+from django.core.validators import MinLengthValidator, int_list_validator
 
 class JobApplication(models.Model):
     full_name = models.CharField(max_length=50, null=False, blank=False)
@@ -12,7 +13,7 @@ class JobApplication(models.Model):
 
     job = models.CharField(choices=job_choices, null=True, blank=False, max_length=50)
     email = models.EmailField(max_length=254, null=False, blank=False)
-    phone_number = models.IntegerField(default='1234567890')
+    phone_number = models.CharField( max_length=10, validators=[int_list_validator(sep=''),MinLengthValidator(10),], default='1234567890')
     country = CountryField(blank_label='Country *', null=False, blank=False)
     postcode = models.CharField(max_length=20, null=True, blank=True)
     town_or_city = models.CharField(max_length=40, null=False, blank=False)
