@@ -1,5 +1,6 @@
 from django import forms 
 from .models import JobApplication
+import re
 
 
 class JobForm(forms.ModelForm):
@@ -9,6 +10,10 @@ class JobForm(forms.ModelForm):
                   'country', 'postcode',
                   'town_or_city', 'street_address1',
                   'street_address2', 'county',)
+        widgets = {
+            'phone': forms.TextInput(attrs={'pattern': r'^\+?[0-9]+$',
+                                            'title': 'Enter a valid phone number.'}),
+        }
     
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
