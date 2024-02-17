@@ -87,7 +87,7 @@ def checkout(request):
                 'county': profile.default_county,
                 })
         except UserProfile.DoesNotExist:
-                order_form = OrderForm()
+                messages.warning(request, 'tgdfgdfgdf?')
         else:
             order_form = OrderForm()
 
