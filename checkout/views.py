@@ -87,9 +87,9 @@ def checkout(request):
                 'county': profile.default_county,
                 })
         except UserProfile.DoesNotExist:
-                messages.warning(request, 'tgdfgdfgdf?')
-        else:
-            order_form = OrderForm()
+                order_form = OrderForm()
+    else:
+        order_form = OrderForm()
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
