@@ -9,9 +9,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="FK Performance ecommerce website for Car Performance parts. Ireland's number 1 supplier of car parts!">
+    <meta name="description"
+        content="FK Performance ecommerce website for Car Performance parts. Ireland's number 1 supplier of car parts!">
     <meta name="keywords"
         content="car parts, spoilers, splitters, coilovers, alloys, ireland, car accessories, gel plates, number plates, stickers, wind deflectors,">
+    <!--  FAVICONS  -->
+    <link rel="icon" type="image/svg+xml" href="/static/favicons/favicon.svg">
+    <link rel="icon" type="image/png" href="/static/favicons/favicon.png">
     {% endblock %}
 
     {% block extra_meta %}
@@ -33,14 +37,14 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
-    
+
 
     {% block extra_js %}
     {% endblock %}
@@ -84,16 +88,16 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                                <a href="{% url 'add_product' %}" class="dropdown-item hover">Add Product</a>
+                            <a href="{% url 'add_product' %}" class="dropdown-item hover">Add Product</a>
                             {% endif %}
-                                <a href="{% url 'profile' %}" class="dropdown-item hover">My Profile</a>
-                                <a href="{% url 'contact' %}" class="dropdown-item hover">Contact Us!</a>
-                                <a href="{% url 'newsletter' %}" class="dropdown-item hover">Newsletter</a>
-                                <a href="{% url 'job' %}" class="dropdown-item hover">Job Applications</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item hover">Logout</a>
+                            <a href="{% url 'profile' %}" class="dropdown-item hover">My Profile</a>
+                            <a href="{% url 'contact' %}" class="dropdown-item hover">Contact Us!</a>
+                            <a href="{% url 'newsletter' %}" class="dropdown-item hover">Newsletter</a>
+                            <a href="{% url 'job' %}" class="dropdown-item hover">Job Applications</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item hover">Logout</a>
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item hover">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item hover">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item hover">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item hover">Login</a>
                             {% endif %}
                         </div>
                     </li>
@@ -114,7 +118,10 @@
                     </li>
                     <li class="list-inline-item">
                         <div>
-                            <a class="privacy-button" href="https://www.privacypolicygenerator.info/live.php?token=A9FDaQCthvGFuG9uj6ZoulFpPDlvdGnS" target="_blank" rel="noopener noreferrer nofollow" aria-label="Privacy Policy">Privacy Policy</a>
+                            <a class="privacy-button"
+                                href="https://www.privacypolicygenerator.info/live.php?token=A9FDaQCthvGFuG9uj6ZoulFpPDlvdGnS"
+                                target="_blank" rel="noopener noreferrer nofollow" aria-label="Privacy Policy">Privacy
+                                Policy</a>
                         </div>
 
                     </li>
@@ -137,17 +144,17 @@
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
-            {% with message.level as level %}
-                {% if level == 40 %}
-                    {% include 'includes/toasts/toast_error.html' %}
-                {% elif level == 30 %}
-                    {% include 'includes/toasts/toast_warning.html' %}
-                {% elif level == 25  %}
-                    {% include 'includes/toasts/toast_success.html' %}
-                {% else %}
-                    {% include 'includes/toasts/toast_info.html' %}
-                {% endif %}
-            {% endwith %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
         {% endfor %}
     </div>
     {% endif %}
