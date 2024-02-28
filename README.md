@@ -281,7 +281,8 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
   - After talking with tutor support and running out of weekly hours we couldn't find a fix sadly. After checking Slack, checking Google and debugging its unresolved.
   - Unfortunately this bug didn't exist on my local enviorment. Order Histort works as it should locally (Still does) but on the deployed version this is bug.
 
-# Project Creation (Github)
+# Deployment
+## Project Creation (Github)
 
    1. Head over to [CI Template](https://github.com/Code-Institute-Org/gitpod-full-template)
    2. Press 'Use this template'
@@ -307,7 +308,7 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
   15. To run the server use `python3 manage.py runserver`
   16. Inside of settings.py in the "Allowed hosts" field add your server address
 
-# DataBase
+## DataBase
 
   1. Head over to [Elephantsql](https://www.elephantsql.com/)
   2. Create an account
@@ -318,13 +319,13 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
   7. Copy your databse url, this can be stored as an enviorment variable to match "DATABASE" variable in settings.py
 
 
-# Heroku App Creation
+## Heroku App Creation
   1. Head over to [Heroku](https://dashboard.heroku.com/)
   2. After logging in, click "New" at the top right of the page.
   3. Click "Create New App"
   4. Choose a name, select your region and click "Create New App" 
 
-# Heroku Setup (Deployment)
+## Heroku Setup (Deployment)
 
   1. Head over to [Heroku](https://dashboard.heroku.com/)
   2. Open "Settings" and click "Reveal Config Vars"
@@ -345,28 +346,36 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
   5. After all this is finished
       - Push a deployment and press "Open App" and check everything is working correctly
 
-### Static Files
+## AWS Setup
+  ### S3
+  1. Head over to [AWS](https://aws.amazon.com/)
+  2. Create an account
+  3. Open S3 Services
+  4. Create a bucket - Create a name and select your region
+  5. Select "ACLs enabled" and "Bucket owner preferred" when prompted
+  6. Select "Static Website Hosting" and enable it.
+      - CORS:
+      `[
+  {
+    "AllowedHeaders": ["Authorization"],
+    "AllowedMethods": ["GET"],
+    "AllowedOrigins": ["*"],
+    "ExposeHeaders": []
+  }
+]`
+      - Configure bucket policy as needed
+      - Select "List" and enable for everyone
 
- 1. Head to [Cloudinary](https://cloudinary.com/ip/gr-sea-gg-brand-home-base?utm_source=google&utm_medium=search&utm_campaign=goog_selfserve_brand_wk22_replicate_core_branded_keyword&utm_term=1329&campaignid=17601148700&adgroupid=141182782954&keyword=cloudinary&device=c&matchtype=e&adposition=&gclid=Cj0KCQiA_P6dBhD1ARIsAAGI7HBiqtoSkOp8dv2sdvprV-d3z6NkMdyK0guRRH98shquMJ7QiCtVbJQaAnvIEALw_wcB)
- 2. Head to dashboard and copy your CLOUDINARY_URL
- 3. In env.py add `os.environ["CLOUDINARY_URL"] = "cloudinary://your_link`
- 4. Add cloudinary url to heroku confic vars.
- 5. Add a confic var `DISABLE_COLLECTSTATIC, 1`
- 6. In settings.py add Cloudinary to 'Installed apps'`'cloudinary_storage',
-    'django.contrib.staticfiles',
-    'cloudinary',`
- 7. Under STATIC_URL add: `STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_URL = '/media/'
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'`
- 8. Change the template directory to `'DIRS': [TEMPLATES_DIR],`
- 9. In allowed hosts add heroku ["your_project_name.herokuapp.com", "YOUR_HOSTNAME"]
- 10. In gitpod create 3 folder 'media, static and templates'
- 11. Create a 'Procfile'
- 12. Inside the Procfile add `web: gunicorn your_project_name.wsgi`
- 13. In the terminal add, commit and push.
- 14. Ensure DEBUG = False in settings.py when making final deployment
+### IAM
+  1. Find the IAM section in the console.
+  2. Under "User Group", create a new one - Insite "Policies" create a new one
+  3. Apply the policy to the group
+  4. Select "Security Credentials"
+  5. Click "Create access key" and download the ".csv" file
+
+### Media Folders
+  1. Inside your bucket - Create a new folder called "media"
+  2. Move all your images to this folder
 
 # Cloning
 
