@@ -281,7 +281,7 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
   - After talking with tutor support and running out of weekly hours we couldn't find a fix sadly. After checking Slack, checking Google and debugging its unresolved.
   - Unfortunately this bug didn't exist on my local enviorment. Order Histort works as it should locally (Still does) but on the deployed version this is bug.
 
-# Creation
+# Project Creation (Github)
 
    1. Head over to [CI Template](https://github.com/Code-Institute-Org/gitpod-full-template)
    2. Press 'Use this template'
@@ -290,57 +290,60 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
    5. Click create.
    6. Click gitpod.
    7. In the terminal install Django and Gunicorn
-      - pip3 install django gunicorn
+      - `pip3 install django gunicorn`
    8. Install the required libaries
-      - pip3 install dj_database_url==0.5.0 psycopg2
+      - `pip3 install dj_database_url==0.5.0 psycopg2`
    9. Install Cloudinary libaries
-      - pip3 install dj3-cloudinary-storage
-pip3 install urllib3==1.26.15
+      - `pip3 install dj3-cloudinary-storage`
   10. Create requirements file
-      - pip3 freeze --local > requirements.txt
+      - `pip3 freeze --local > requirements.txt`
   11. Create Project
-      - django-admin startproject your_project_name .
+      - `django-admin startproject your_project_name .`
   12. Create App
-      - python3 manage.py startapp your_app
-  13. In settings.py add your app name inside 'Installed apps' and save the file
+      - `python3 manage.py startapp your_app`
+  13. In settings.py add your app name inside "Installed apps" and save the file
   14. Migrate your changes
-       - python3 manage.py migrate
-  15. To run the server use 'python3 manage.py runserver'
-  16. Inside of settings.py in the 'Allowed hosts' field add your server address
+       - `python3 manage.py migrate`
+  15. To run the server use `python3 manage.py runserver`
+  16. Inside of settings.py in the "Allowed hosts" field add your server address
 
-### DataBase
+# DataBase
 
   1. Head over to [Elephantsql](https://www.elephantsql.com/)
   2. Create an account
-  3. Click create new instance
+  3. Click "Create New Instance"
   4. Set up your free plan
   5. Select your region
-  6. Press review
-  7. Copy your databse url
+  6. Press "Review"
+  7. Copy your databse url, this can be stored as an enviorment variable to match "DATABASE" variable in settings.py
 
 
-### Heroku
+# Heroku App Creation
+  1. Head over to [Heroku](https://dashboard.heroku.com/)
+  2. After logging in, click "New" at the top right of the page.
+  3. Click "Create New App"
+  4. Choose a name, select your region and click "Create New App" 
+
+# Heroku Setup (Deployment)
 
   1. Head over to [Heroku](https://dashboard.heroku.com/)
-  2. Create an app (your_app_name) and location.
-  3. Head to settings and click reveal config vars.
-  4. Create a new one called 'DATABASE_URL' (Copy in your database url)
-  5. In gitpod create a file called 'env.py'
-  6. Import 'os'
-  7. Paste `os.environ["DATABASE_URL"]` (Replace 'DATABASE_URL) with your URL
-  8. Add a secret key `os.environ["SECRET_KEY"] = "create_your_own"`
-  9. Head back to heroku config vars and add 'SECRET_KEY' and input your key.
-  10. In settings.py add
-      - `import os`
-      `import dj_database_url`
-      `if os.path.isfile("env.py):`
-      `import env`
-  11. Remove the secret key and replace it with `SECRET_KEY = os.environ.get('SECRET_KEY')` (This links with env.py)
-  12. Comment out the database content
-  13. Paste in: `DATABASES = {
-   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-}`
-  14. Save all files and in the terminal paste `python3 manage.py migrate`
+  2. Open "Settings" and click "Reveal Config Vars"
+  3. Inside Config Vars:
+      - `SECRET_KEY` - Use the one stored in `settings.py` or `env.py`
+      - `DATABASE_URL` - This is the url provided by ElephantSQL
+      - `AWS_ACCESS_KEY_ID` - This is found in your S3 bucket
+      - `AWS_SECRET_ACCESS_KEY` - Found in AWS
+      - `EMAIL_HOST_PASS` - Email host password
+      - `EMAIL_HOST_USER` - Email host address
+      - `STRIPE_PUBLIC_KEY` - Stripe public key
+      - `STRIPE_SECRET_KEY` - Stripe secret key
+      - `USE_AWS` - This should be set to `True`
+  4. Once all this is filled in
+      1. Head over to the deploy section on Heroku
+      2. Connect your Github repository.
+      3. Select if you want manual or automatic deploys
+  5. After all this is finished
+      - Push a deployment and press "Open App" and check everything is working correctly
 
 ### Static Files
 
