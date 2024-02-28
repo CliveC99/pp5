@@ -379,19 +379,19 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
 
 # Cloning
 
-1. Open up the repository [Car Reviews](https://github.com/CliveC99/car-rating)
+1. Open up the repository [FK Performance](https://github.com/CliveC99/pp5)
 2. Above the list of files click "Code".
 3. Click if you would like to clone as "HTTPS", "SSH", or "GitHub CLI".
 4. Once selected press copy.
 5. Open Git Bash.
 6. Change the directory to where you want the clone to appear.
 7. Paste in the link you copied in step 4. (This is the line for my repository): <br>
-  `$ git clone https://github.com/CliveC99/car-rating.git`
+  `$ git clone https://github.com/CliveC99/pp5.git`
 8. Press enter and the clone will happen.
 
 # Forking
 
-1. Open up the repository [Car Reviews](https://github.com/CliveC99/car-rating)
+1. Open up the repository [FK Performance](https://github.com/CliveC99/pp5)
 2. Locate the fork button at the top right.
 3. Select an owner and repository name.
 4. Add a description (optional).
