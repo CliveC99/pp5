@@ -178,6 +178,16 @@
     padding-top: 10%;
 }
 
+/**** FontAwesome Icons ****/
+.icons {
+    color: green;
+    font-size: 35px;
+}
+
+.icons:hover {
+    color: black;
+}
+
 
 /**** MEDIA QUERIES ****/
 /* pad the top a bit when navbar is collapsed on mobile */
