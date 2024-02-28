@@ -403,10 +403,10 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
 - I structured my git commits whenever I would add, change or update code.
 - I did this by using:
 
-   1. git status
-   2. git add (file name)
-   3. git commit -m (message)
-   4. git push.
+   1. ``git status``
+   2. ``git add (file name)``
+   3. ``git commit -m (message)``
+   4. ``git push``
   ![Git Commits](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701168971/pp5%20readme/commits_twvgct.png)
 
 
