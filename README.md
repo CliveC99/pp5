@@ -201,9 +201,23 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
    | Contact Section  | Shows user is subscribed | Shows user subscribed - Email is logged to Admin Panel | Enter an email and press subscribe |
    | Job Application Section  | Applied for the job when the form submits | Shows user applied - Details is logged to Admin Panel | Fill out the form and submit |
    
-   
+   ## Examples of testing features
+  ### Order History
+  ![Order History](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1709427993/pp5%20readme/order_history_gd1eh2.png)
+  ### Order Success
+  ![Order Success](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1709427993/pp5%20readme/order_success_ikg3dj.png)
+  ### Order History
+  ![Pop Up Message](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1709427993/pp5%20readme/pop_up_messages_ejbbsb.png)
+  ### Contact Us
+  ![Contact Us](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1709427993/pp5%20readme/contact_us_section_uac7me.png)
+  ### Update Quantity
+  ![Update Quantity](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1709427993/pp5%20readme/updated_quantity_iamtan.png)
+  ### Add Items to bag
+  ![Add items](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1709427993/pp5%20readme/items_added_to_bag_auakve.png)
+  ### Products Filtering
+  ![Products Filtering](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1709427993/pp5%20readme/products_low_to_high_tcdton.png)
 
-   
+
 
    | Testing        |    Expected   | Result       | Test |
    | -------------  |:-------------:| -----:| -----: |
