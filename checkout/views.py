@@ -18,7 +18,6 @@ def checkout(request):
 
     if request.method == 'POST':
         bag = request.session.get('bag', {})
-        print(bag)
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
@@ -115,9 +114,6 @@ def checkout_success(request, order_number):
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
         order.user_profile = profile
-        print(order.grand_total)
-        print(order.order_total)
-        print(order.delivery_cost)
         order.save()
 
 
