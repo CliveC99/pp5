@@ -286,14 +286,11 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
    | Overlapping | I was having issues with overlapping information on mobile | Turns out I had ``{% include 'includes/mobile-top-header.html' %}`` in twice|
    | Home Button | Home button wasn't an option on medium screens | I solved this with adding ``d-lg-none`` |
    | DB Issue | When I changed to codeanywhere my DB file didn't transfer over from gitpod | With the help of tutor support. I had to pull the info from my DB and put it in a json file using ``python3 manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json`` |
-   | Order History | Order Total, Delivery Total and Grand total not updating | Unresolved - Explained below. |
+   | Order History | Order Total, Delivery Total and Grand total not updating | I solved this by fixing a typo re: ``self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0`` |
 
 ## Unresolved Bugs
 
-* Order History
-  - This was unresolved.
-  - After talking with tutor support and running out of weekly hours we couldn't find a fix sadly. After checking Slack, checking Google and debugging its unresolved.
-  - Unfortunately this bug didn't exist on my local enviorment. Order Histort works as it should locally (Still does) but on the deployed version this is bug.
+* No issues.
 
 # Deployment
 ## Project Creation (Github)
