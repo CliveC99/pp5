@@ -206,7 +206,7 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
   ![Order History](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1709427993/pp5%20readme/order_history_gd1eh2.png)
   ### Order Success
   ![Order Success](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1709427993/pp5%20readme/order_success_ikg3dj.png)
-  ### Order History
+  ### Pop Up Messages
   ![Pop Up Message](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1709427993/pp5%20readme/pop_up_messages_ejbbsb.png)
   ### Contact Us
   ![Contact Us](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1709427993/pp5%20readme/contact_us_section_uac7me.png)
