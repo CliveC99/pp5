@@ -5,6 +5,7 @@ from products.models import Product
 
 import json
 import time
+import stripe
 
 class StripeWH_Handler:
     """ Handles stripe webhooks """
@@ -30,20 +31,14 @@ class StripeWH_Handler:
             )
 
         billing_details = stripe_charge.billing_details
-        shipping_details = intent.shipping
         grand_total = round(stripe_charge.amount / 100, 2)
-
-        for field, value in shipping_details.address.items():
-            if value == "":
-                shipping_details.address[field] = None
-                
         
         order_exist = False
         attempt = 1
         while attempt <= 5:
             try:
                 order= Order.objects.get(
-                    full_name__iexact=shipping_details.name,
+                    full_name__iexact=billing_details.name,
                     email__iexact=billing_details.email,
                     grand_total=grand_total,
                     original_bag=bag,
@@ -62,9 +57,8 @@ class StripeWH_Handler:
             order = None
             try:
                 order = Order.objects.create(
-                full_name=shipping_details.name,
+                full_name=billing_details.name,
                 email=billing_details.email,
-                grand_total=grand_total,
                 original_bag=bag,
                 stripe_pid=pid,
                 )
@@ -84,11 +78,15 @@ class StripeWH_Handler:
                     content=f'Webhook recived: {event["type"]} | ERROR: {e}',
                     status=500)
         return HttpResponse(
-                    content=f'Webhook recived: {event["type"]} | ERROR: {e}',
-                    status=500)
+                    content=(
+                    f'Webhook received: {event["type"]} | '
+                    'SUCCESS: Created order in webhook'
+                ),
+                status=200
+            )
     
     def handle_payment_intent_failed(self, event):
         """ Handle payment intend failed from stripe """
         return HttpResponse(
-            content=f'Webhook recived: {event["type"]} | SUCCESS: Created order in webhook',
+            content=f'Webhook recived: {event["type"]}',
             status=200)
