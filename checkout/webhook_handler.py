@@ -45,7 +45,7 @@ class StripeWH_Handler:
         intent = event.data.object
         pid = intent.id
         bag = intent.metadata.bag
-        save_info = intent.metadata.save_info
+        save_info = intent.metadata.save_info  # NOQA - Needed for caching checkout data
 
         # Get the Charge object
         stripe_charge = stripe.Charge.retrieve(
@@ -54,24 +54,23 @@ class StripeWH_Handler:
 
         billing_details = stripe_charge.billing_details
         grand_total = round(stripe_charge.amount / 100, 2)
-        
-        order_exist = False
+        order_exists = False
         attempt = 1
         while attempt <= 5:
             try:
-                order= Order.objects.get(
+                order = Order.objects.get(
                     full_name__iexact=billing_details.name,
                     email__iexact=billing_details.email,
                     grand_total=grand_total,
                     original_bag=bag,
                     stripe_pid=pid,
                 )
-                order_exist = True
+                order_exists = True
                 break
             except Order.DoesNotExist:
                 attempt += 1
                 time.sleep(1)
-        if order_exist:
+        if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
                 content=f'Webhook recived: {event["type"]} | SUCCESS: Verified order already in DB',
