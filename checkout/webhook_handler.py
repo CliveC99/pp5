@@ -50,7 +50,7 @@ class StripeWH_Handler:
         # Get the Charge object
         stripe_charge = stripe.Charge.retrieve(
             intent.latest_charge
-            )
+        )
 
         billing_details = stripe_charge.billing_details
         grand_total = round(stripe_charge.amount / 100, 2)
@@ -73,16 +73,20 @@ class StripeWH_Handler:
         if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
-                content=f'Webhook recived: {event["type"]} | SUCCESS: Verified order already in DB',
-                status=200)
+                content=(
+                    f'Webhook received: {event["type"]} | '
+                    f'SUCCESS: Verified order already in database'
+                ),
+                status=200
+            )
         else:
             order = None
             try:
                 order = Order.objects.create(
-                full_name=billing_details.name,
-                email=billing_details.email,
-                original_bag=bag,
-                stripe_pid=pid,
+                    full_name=billing_details.name,
+                    email=billing_details.email,
+                    original_bag=bag,
+                    stripe_pid=pid,
                 )
                 for item_id, item_data in json.loads(bag).items():
                     product = Product.objects.get(id=item_id)
