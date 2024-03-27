@@ -70,6 +70,7 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
 - As a ***user*** I can sign up to a newsletter in the my account dropdown section.
 - As a ***user*** I can contact the site to get the information I require.
 - As a ***user*** I can apply for a job to further my career.
+- As a ***user*** I can recive confirmation emails after I make a purchase.
 
 ### **Owner Goals**
 
@@ -80,6 +81,7 @@ I used a Kanban board to outline my progress [view here.](https://github.com/use
 ### **Returning User**
 
 - As a ***returning user*** I can check my order history.
+- As a ***returning user*** I can check have my information saved to my profile for a quicker checkout experience.
 
 
 # Models
@@ -159,6 +161,7 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
 - Order History
 - Contact Section
 - Job Application Section
+- Confirmation email after a purchase
 
 | Feature        |      |
    | -------------  |:-------------:|
@@ -176,10 +179,11 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
    | Order History | ![Order History](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1701166553/pp5%20readme/order-history_j3hhpa.png) |
    | Contact Section | ![Contact Section](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1704444314/pp5%20readme/contact_re592k.png) |
    | Job Application Section | ![Job Application Section](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1704444443/pp5%20readme/job_application_nwf9dq.png) |
+  | Confirmation Email | ![Confirmation Email](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1711576020/pp5%20readme/confirmation_email_ndctep.png) |
 
 ## Features to be added
 
-* Comments about a item, review system.
+* Comments about a item, review system, favourite items (Wishlist)
 
 # Manual Testing
 
@@ -287,6 +291,8 @@ FK Performance operates on an e-commerce platform for car enthusiasts selling ca
    | Home Button | Home button wasn't an option on medium screens | I solved this with adding ``d-lg-none`` |
    | DB Issue | When I changed to codeanywhere my DB file didn't transfer over from gitpod | With the help of tutor support. I had to pull the info from my DB and put it in a json file using ``python3 manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json`` |
    | Order History | Order Total, Delivery Total and Grand total not updating | I solved this by fixing a typo re: ``self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0`` |
+   | Stripe Keys | I was having issues with my webhooks | I had stored the wrong secret key, I updated the key and the issue was solved.  |
+   | Local and Postgres DB | I was having issues with my Postgres DB. 11 migrations had not been passed to my Postgres DB. | I solved this by clearing my Postgres DB and making migrations and migrating everything  |
 
 ## Unresolved Bugs
 
